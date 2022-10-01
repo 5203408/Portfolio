@@ -829,7 +829,7 @@ section .container {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
-  background: rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.08);
   border: 0;
   transition: 0.3s;
   color: #fff;
