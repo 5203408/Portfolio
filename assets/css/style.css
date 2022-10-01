@@ -779,7 +779,7 @@ section .container {
 
 .contact .php-email-form {
   padding: 30px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.008);
 }
 
 .contact .php-email-form .error-message {
@@ -829,7 +829,7 @@ section .container {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
-  background: rgba(255, 255, 255, 5.90);
+  background: rgba(255, 255, 255, 0.30);
   border: 0;
   transition: 0.3s;
   color: #fff;
@@ -837,7 +837,7 @@ section .container {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  background-color: rgba(255, 255, 255, 10.00);
+  background-color: rgba(255, 255, 255, 0.90);
 }
 
 .contact .php-email-form input::-moz-placeholder,
