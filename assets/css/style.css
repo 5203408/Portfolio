@@ -732,7 +732,7 @@ section .container {
   color: #444444;
   padding: 20px;
   width: 100%;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 8.9);
 }
 
 .contact .info-box i.bx {
@@ -779,7 +779,7 @@ section .container {
 
 .contact .php-email-form {
   padding: 30px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 1.08);
 }
 
 .contact .php-email-form .error-message {
