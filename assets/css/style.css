@@ -842,13 +842,13 @@ section .container {
 
 .contact .php-email-form input::-moz-placeholder,
 .contact .php-email-form textarea::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
   opacity: 1;
 }
 
 .contact .php-email-form input::placeholder,
 .contact .php-email-form textarea::placeholder {
-  color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
   opacity: 1;
 }
 
