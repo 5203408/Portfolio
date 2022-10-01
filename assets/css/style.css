@@ -779,7 +779,7 @@ section .container {
 
 .contact .php-email-form {
   padding: 30px;
-  background: rgba(255, 255, 255, 0.0008);
+  background: rgba(255, 255, 255, 0.10);
 }
 
 .contact .php-email-form .error-message {
