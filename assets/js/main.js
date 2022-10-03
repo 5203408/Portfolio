@@ -1,9 +1,3 @@
-/**
-* Template Name: Personal - v4.9.0
-* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function() {
   "use strict";
 
@@ -184,26 +178,26 @@
   });
 
   /**
-   * Porfolio isotope and filter
+   * Work isotope and filter
    */
   window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item',
+    let workContainer = select('.work-container');
+    if (workContainer) {
+      let workIsotope = new Isotope(workContainer, {
+        itemSelector: '.work-item',
         layoutMode: 'fitRows'
       });
 
-      let portfolioFilters = select('#portfolio-flters li', true);
+      let workFilters = select('#work-flters li', true);
 
-      on('click', '#portfolio-flters li', function(e) {
+      on('click', '#work-flters li', function(e) {
         e.preventDefault();
-        portfolioFilters.forEach(function(el) {
+        workFilters.forEach(function(el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
 
-        portfolioIsotope.arrange({
+        workIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
       }, true);
@@ -212,25 +206,25 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate work lightbox 
    */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
+  const workLightbox = GLightbox({
+    selector: '.work-lightbox'
   });
 
   /**
-   * Initiate portfolio details lightbox 
+   * Initiate work details lightbox 
    */
-  const portfolioDetailsLightbox = GLightbox({
-    selector: '.portfolio-details-lightbox',
+  const workDetailsLightbox = GLightbox({
+    selector: '.work-details-lightbox',
     width: '90%',
     height: '90vh'
   });
 
   /**
-   * Portfolio details slider
+   * Work details slider
    */
-  new Swiper('.portfolio-details-slider', {
+  new Swiper('.work-details-slider', {
     speed: 400,
     loop: true,
     autoplay: {

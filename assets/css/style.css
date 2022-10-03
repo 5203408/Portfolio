@@ -1,10 +1,3 @@
-/**
-* Template Name: Personal - v4.9.0
-* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -435,9 +428,45 @@ section .container {
 }
 
 /*--------------------------------------------------------------
-# Resume
+# Skills & Experience
 --------------------------------------------------------------*/
-.resume .resume-title {
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #18d26e;
+}
+
+/*--------------------------------------------------------------
+# Skills & Experience
+--------------------------------------------------------------*/
+.skill .skill-title {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
@@ -445,14 +474,14 @@ section .container {
   color: #fff;
 }
 
-.resume .resume-item {
+.skill .skill-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
   border-left: 2px solid rgba(255, 255, 255, 0.2);
   position: relative;
 }
 
-.resume .resume-item h4 {
+.skill .skill-item h4 {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
@@ -462,7 +491,7 @@ section .container {
   margin-bottom: 10px;
 }
 
-.resume .resume-item h5 {
+.skill .skill-item h5 {
   font-size: 16px;
   background: rgba(255, 255, 255, 0.15);
   padding: 5px 15px;
@@ -471,19 +500,19 @@ section .container {
   margin-bottom: 10px;
 }
 
-.resume .resume-item ul {
+.skill .skill-item ul {
   padding-left: 20px;
 }
 
-.resume .resume-item ul li {
+.skill .skill-item ul li {
   padding-bottom: 10px;
 }
 
-.resume .resume-item:last-child {
+.skill .skill-item:last-child {
   padding-bottom: 0;
 }
 
-.resume .resume-item::before {
+.skill .skill-item::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -496,13 +525,13 @@ section .container {
 }
 
 /*--------------------------------------------------------------
-# Portfolio
+# Work
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
+.work .work-item {
   margin-bottom: 30px;
 }
 
-.portfolio #portfolio-flters {
+.work #work-flters {
   padding: 0;
   margin: 0 auto 15px auto;
   list-style: none;
@@ -511,7 +540,7 @@ section .container {
   padding: 2px 15px;
 }
 
-.portfolio #portfolio-flters li {
+.work #work-flters li {
   cursor: pointer;
   display: inline-block;
   padding: 8px 16px 10px 16px;
@@ -526,16 +555,16 @@ section .container {
   border-radius: 4px;
 }
 
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
+.work #work-flters li:hover,
+.work #work-flters li.filter-active {
   background: #18d26e;
 }
 
-.portfolio #portfolio-flters li:last-child {
+.work #work-flters li:last-child {
   margin-right: 0;
 }
 
-.portfolio .portfolio-wrap {
+.work .work-wrap {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
@@ -543,7 +572,7 @@ section .container {
   background: rgba(0, 0, 0, 0.6);
 }
 
-.portfolio .portfolio-wrap::before {
+.work .work-wrap::before {
   content: "";
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
@@ -556,7 +585,7 @@ section .container {
   opacity: 0;
 }
 
-.portfolio .portfolio-wrap .portfolio-info {
+.work .work-wrap .work-info {
   opacity: 0;
   position: absolute;
   top: 0;
@@ -572,7 +601,7 @@ section .container {
   align-items: center;
 }
 
-.portfolio .portfolio-wrap .portfolio-info::before {
+.work .work-wrap .work-info::before {
   display: block;
   content: "";
   width: 48px;
@@ -586,7 +615,7 @@ section .container {
   z-index: 9994;
 }
 
-.portfolio .portfolio-wrap .portfolio-info::after {
+.work .work-wrap .work-info::after {
   display: block;
   content: "";
   width: 48px;
@@ -600,13 +629,13 @@ section .container {
   z-index: 9994;
 }
 
-.portfolio .portfolio-wrap .portfolio-info h4 {
+.work .work-wrap .work-info h4 {
   font-size: 20px;
   color: #fff;
   font-weight: 600;
 }
 
-.portfolio .portfolio-wrap .portfolio-info p {
+.work .work-wrap .work-info p {
   color: #ffffff;
   font-size: 14px;
   text-transform: uppercase;
@@ -614,12 +643,12 @@ section .container {
   margin: 0;
 }
 
-.portfolio .portfolio-wrap .portfolio-links {
+.work .work-wrap .work-links {
   text-align: center;
   z-index: 4;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a {
+.work .work-wrap .work-links a {
   color: #fff;
   margin: 0 2px;
   font-size: 28px;
@@ -627,11 +656,11 @@ section .container {
   transition: 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a:hover {
+.work .work-wrap .work-links a:hover {
   color: #63eda3;
 }
 
-.portfolio .portfolio-wrap:hover::before {
+.work .work-wrap:hover::before {
   top: 0;
   left: 0;
   right: 0;
@@ -639,24 +668,24 @@ section .container {
   opacity: 1;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info {
+.work .work-wrap:hover .work-info {
   opacity: 1;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info::before {
+.work .work-wrap:hover .work-info::before {
   top: 15px;
   left: 15px;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info::after {
+.work .work-wrap:hover .work-info::after {
   bottom: 15px;
   right: 15px;
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details
+# Work Details
 --------------------------------------------------------------*/
-.portfolio-details {
+.work-details {
   padding-top: 40px;
   background: rgba(0, 0, 0, 0.8);
   position: fixed;
@@ -667,61 +696,61 @@ section .container {
   overflow-y: auto;
 }
 
-.portfolio-details .container {
+.work-details .container {
   padding-top: 20px;
   padding-bottom: 40px;
 }
 
-.portfolio-details .portfolio-title {
+.work-details .work-title {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-info {
+.work-details .work-info {
   padding-top: 45px;
 }
 
-.portfolio-details .portfolio-info h3 {
+.work-details .work-info h3 {
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-info ul {
+.work-details .work-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.work-details .work-info ul li+li {
   margin-top: 10px;
 }
 
-.portfolio-details .portfolio-info p {
+.work-details .work-info p {
   font-size: 15px;
   padding: 15px 0 0 0;
 }
 
 @media (max-width: 992px) {
-  .portfolio-details .portfolio-info {
+  .work-details .work-info {
     padding-top: 20px;
   }
 }
 
-.portfolio-details .swiper-pagination {
+.work-details .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.portfolio-details .swiper-pagination .swiper-pagination-bullet {
+.work-details .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
+.work-details .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #18d26e;
 }
 
@@ -896,6 +925,7 @@ section .container {
 /*--------------------------------------------------------------
 # Credits
 --------------------------------------------------------------*/
+
 /*
 .credits {
   position: fixed;
@@ -925,3 +955,5 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+
+*/
