@@ -178,26 +178,26 @@
   });
 
   /**
-   * Work isotope and filter
+   * unit isotope and filter
    */
   window.addEventListener('load', () => {
-    let workContainer = select('.work-container');
-    if (workContainer) {
-      let workIsotope = new Isotope(workContainer, {
-        itemSelector: '.work-item',
+    let unitContainer = select('.unit-container');
+    if (unitContainer) {
+      let unitIsotope = new Isotope(unitContainer, {
+        itemSelector: '.unit-item',
         layoutMode: 'fitRows'
       });
 
-      let workFilters = select('#work-flters li', true);
+      let unitFilters = select('#unit-flters li', true);
 
-      on('click', '#work-flters li', function(e) {
+      on('click', '#unit-flters li', function(e) {
         e.preventDefault();
-        workFilters.forEach(function(el) {
+        unitFilters.forEach(function(el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
 
-        workIsotope.arrange({
+        unitIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
       }, true);
@@ -206,25 +206,25 @@
   });
 
   /**
-   * Initiate work lightbox 
+   * Initiate unit lightbox 
    */
-  const workLightbox = GLightbox({
-    selector: '.work-lightbox'
+  const unitLightbox = GLightbox({
+    selector: '.unit-lightbox'
   });
 
   /**
-   * Initiate work details lightbox 
+   * Initiate unit details lightbox 
    */
-  const workDetailsLightbox = GLightbox({
-    selector: '.work-details-lightbox',
+  const unitDetailsLightbox = GLightbox({
+    selector: '.unit-details-lightbox',
     width: '90%',
     height: '90vh'
   });
 
   /**
-   * Work details slider
+   * unit details slider
    */
-  new Swiper('.work-details-slider', {
+  new Swiper('.unit-details-slider', {
     speed: 400,
     loop: true,
     autoplay: {
